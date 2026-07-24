@@ -40,6 +40,38 @@ header{
     color:#666;
     margin-top:6px;
 }
+.navbar{
+    background:#0B4F8C;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin:0;
+    padding:0;
+}
+
+.navbar li{
+    margin:0;
+}
+
+.navbar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 18px;
+    font-weight:600;
+}
+
+.navbar a:hover{
+    background:#1565C0;
+}
+
+.navbar a.active{
+    background:#003B70;
+}
 </style>
 <body>
 
@@ -59,17 +91,18 @@ header{
 
 </div>
 
-<!--<nav class="navbar">
+<!-- Start of Navigation bar-->
+<nav class="navbar">
 
 <ul>
 
 <li><a  href="index.html">Home</a></li>
 
-<li><a href="about.html">About</a></li>-->
+<li><a href="about.html">About</a></li>
 
-<!--<li><a href="president.html">President</a></li>-->
+<li><a href="president.html">President</a></li>
 
-<!--<li><a href="committee.html">Committee</a></li>
+<li><a href="committee.html">Committee</a></li>
 
 <li><a href="Memberslist.html">Member Directory</a></li>
 
@@ -86,8 +119,9 @@ header{
 </ul>
 
 </nav>
--->
+
 </header>
+<!--End of Navigation bar-->
 
 <head>
     <title>Notices</title>
@@ -136,12 +170,12 @@ header{
 </head>
 
 <body>
-<p>
+<!--<p>
     <a href="index.html" style="display:inline-block;padding: 10px 20px;background-color: blue;color: white;>">
         Home
     </a>
 </div>
-</p>
+</p>-->
 
 <h2 style="padding:15px;">Association Notices</h2>
 
@@ -160,7 +194,7 @@ Consultation Charges for Doctors - Chennai & Bengaluru
         <a href="notices-folder/List of empanelled hospitals w.e.f 01.07.2026.pdf" target="noticeFrame">
             empanelled hospitals w.e.f 1st july 2026
         </a>
-        <a href="notices-folder/March 2024 account statement.pdf" target="noticeFrame">
+        <a href="March 2024 account statement.pdf" target="noticeFrame">
     Account Statement 2024
         </a>
     </div>
@@ -169,7 +203,7 @@ Consultation Charges for Doctors - Chennai & Bengaluru
 
         <iframe
             name="noticeFrame"
-            src="notices-folder/Welcome.pdf">
+            src="notices-folder/welcome.pdf">
         </iframe>
 
     </div>
