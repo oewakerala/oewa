@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | OEWA Kerala</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+<div class="top-header">
+
+    <div class="logo-area">
+        <img src="images/logo.png" alt="OEWA Logo">
+
+        <div>
+            <h1>ONGC Ex-Employees Association (OEWA), Kerala</h1>
+            <p>Serving Retired ONGC Employees Since 2019</p>
+        </div>
+
+    </div>
+
+</div>
+
+<nav class="navbar">
+
+<ul>
+
+<li><a  href="index.html">Home</a></li>
+
+<li><a  href="about.html">About</a></li>
+
+<!--<li><a href="president.html">President</a></li>-->
+
+<li><a href="committee.html">Committee</a></li>
+
+<li><a href="Memberslist.html">Member Directory</a></li>
+
+<li><a href="membership.html">Become a Member</a></li>
+
+<li><a href="notices.html">Notices</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="downloads.html">Downloads</a></li>
+
+<li><a class="active" href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Helpdesk Section -->
+
+<!-- Main Content -->
+<main>
+
+    <section class="helpdesk-section">
+
+        <div class="helpdesk-container">
+
+            <h2>OEWA Helpdesk</h2>
+
+            <p class="helpdesk-intro">
+                Welcome to the OEWA Helpdesk. Members can use this facility
+                to submit their queries, requests or grievances to the Association.
+            </p>
+
+
+            <!-- Submit Query -->
+            <div class="helpdesk-card">
+
+                <h3>Submit a Query / Grievance</h3>
+
+                <form
+                    id="helpdeskForm"
+                    action="https://formspree.io/f/xzezloek"
+                    method="POST">
+
+                    <!-- Member ID -->
+                    <div class="form-group">
+
+                        <label for="memberId">
+                            Member ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="memberId"
+                            name="Member ID"
+                            placeholder="Enter your Member ID"
+                            required>
+
+                    </div>
+
+
+                    <!-- Member Name -->
+                    <div class="form-group">
+
+                        <label for="memberName">
+                            Member Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="memberName"
+                            name="Member Name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <!-- Category -->
+                    <div class="form-group">
+
+                        <label for="category">
+                            Query Category
+                        </label>
+
+                        <select
+                            id="category"
+                            name="Category"
+                            required>
+
+                            <option value="">
+                                -- Select Category --
+                            </option>
+
+                            <option value="Pension">
+                                Pension
+                            </option>
+
+                            <option value="Medical">
+                                Medical
+                            </option>
+
+                            <option value="Membership">
+                                Membership
+                            </option>
+
+                            <option value="Accounts / Subscription">
+                                Accounts / Subscription
+                            </option>
+
+                            <option value="Welfare">
+                                Welfare
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Subject -->
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="Subject"
+                            placeholder="Enter subject"
+                            required>
+
+                    </div>
+
+
+                    <!-- Query -->
+                    <div class="form-group">
+
+                        <label for="message">
+                            Query / Grievance
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="Query / Grievance"
+                            rows="6"
+                            placeholder="Enter your query or grievance here..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <!-- Hidden email subject -->
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="OEWA Helpdesk - New Query">
+
+
+                    <!-- Submit Button -->
+                    <button
+                        type="submit"
+                        class="helpdesk-button"
+                        id="submitButton">
+
+                        Submit Query
+
+                    </button>
+
+                </form>
+
+
+                <!-- Submission Message -->
+                <div
+                    id="formMessage"
+                    style="display:none; margin-top:20px; padding:15px; border-radius:6px;">
+
+                </div>
+
+            </div>
+
+
+            <!-- Check Status -->
+            <div class="helpdesk-card status-card">
+
+                <h3>Check Query Status</h3>
+
+                <p>
+                    If you have already submitted a query, you can check
+                    its status using your reference number.
+                </p>
+
+                <div class="status-form">
+
+                    <input
+                        type="text"
+                        id="referenceNumber"
+                        placeholder="Enter Reference Number">
+
+                    <button
+                        type="button"
+                        class="helpdesk-button"
+                        onclick="checkStatus()">
+
+                        Check Status
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Information -->
+            <div class="helpdesk-info">
+
+                <h3>Helpdesk Information</h3>
+
+                <ul>
+
+                    <li>
+                        Please provide your correct Member ID when submitting
+                        a query.
+                    </li>
+
+                    <li>
+                        Please select the appropriate category for your query.
+                    </li>
+
+                    <li>
+                        Please retain the reference number provided after
+                        submission for future correspondence.
+                    </li>
+
+                    <li>
+                        Queries will be reviewed by the Association and
+                        responded to as appropriate.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+
+    <p>
+        © 2026 ONGC Ex-Employees Association (OEWA), Kerala
+    </p>
+
+    <p>
+        Email:
+        <a href="mailto:oewakerala@gmail.com">
+            oewakerala@gmail.com
+        </a>
+    </p>
+
+</footer>
+
+
+<!-- Formspree Submission Script -->
+<script>
+
+    const form = document.getElementById("helpdeskForm");
+    const submitButton = document.getElementById("submitButton");
+    const formMessage = document.getElementById("formMessage");
+
+    form.addEventListener("submit", async function(event) {
+
+        event.preventDefault();
+
+        submitButton.disabled = true;
+        submitButton.textContent = "Submitting...";
+
+        const formData = new FormData(form);
+
+        try {
+
+            const response = await fetch(form.action, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (response.ok) {
+
+                formMessage.style.display = "block";
+                formMessage.textContent =
+                    "Your query has been submitted successfully to OEWA Helpdesk.";
+
+                formMessage.style.backgroundColor = "#e8f5e9";
+                formMessage.style.color = "#2e7d32";
+
+                form.reset();
+
+            } else {
+
+                formMessage.style.display = "block";
+                formMessage.textContent =
+                    "There was a problem submitting your query. Please try again.";
+
+                formMessage.style.backgroundColor = "#ffebee";
+                formMessage.style.color = "#c62828";
+            }
+
+        } catch (error) {
+
+            formMessage.style.display = "block";
+            formMessage.textContent =
+                "Unable to connect to the Helpdesk service. Please try again later.";
+
+            formMessage.style.backgroundColor = "#ffebee";
+            formMessage.style.color = "#c62828";
+
+        }
+
+        submitButton.disabled = false;
+        submitButton.textContent = "Submit Query";
+
+    });
+
+
+    /* Temporary status function */
+    function checkStatus() {
+
+        const reference =
+            document.getElementById("referenceNumber").value.trim();
+
+        if (reference === "") {
+
+            alert("Please enter your reference number.");
+
+            return;
+        }
+
+        alert(
+            "The query-status facility will be connected when the OEWA member database is implemented."
+        );
+
+    }
+
+</script>
+```
+
+</body>
+
+</html>
+
