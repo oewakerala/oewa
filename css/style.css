@@ -506,3 +506,192 @@ background:#f4f4f4;
 .gallery-grid img:hover {
     transform: scale(1.05);
 }
+/* =========================================
+OEWA HELPDESK PAGE
+========================================= */
+
+.helpdesk-section {
+padding: 50px 20px;
+background-color: #f5f8fb;
+min-height: 600px;
+}
+
+.helpdesk-container {
+max-width: 900px;
+margin: 0 auto;
+}
+
+.helpdesk-container > h2 {
+text-align: center;
+color: #0B4F8C;
+font-size: 32px;
+margin-bottom: 10px;
+}
+
+.helpdesk-intro {
+text-align: center;
+max-width: 700px;
+margin: 0 auto 35px;
+color: #555;
+font-size: 16px;
+line-height: 1.6;
+}
+
+/* Helpdesk Cards */
+
+.helpdesk-card {
+background-color: #ffffff;
+padding: 30px;
+margin-bottom: 30px;
+border-radius: 10px;
+box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.helpdesk-card h3 {
+color: #0B4F8C;
+margin-top: 0;
+margin-bottom: 25px;
+font-size: 22px;
+}
+
+/* Form */
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 7px;
+font-weight: 600;
+color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-family: inherit;
+font-size: 15px;
+box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+outline: none;
+border-color: #0B4F8C;
+box-shadow: 0 0 4px rgba(11, 79, 140, 0.25);
+}
+
+.form-group textarea {
+resize: vertical;
+}
+
+/* Submit / Status Buttons */
+
+.helpdesk-button {
+background-color: #0B4F8C;
+color: #ffffff;
+border: none;
+padding: 12px 25px;
+border-radius: 6px;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.helpdesk-button:hover {
+background-color: #083b69;
+}
+
+/* Query Status */
+
+.status-card {
+margin-top: 10px;
+}
+
+.status-card p {
+color: #555;
+line-height: 1.6;
+}
+
+.status-form {
+display: flex;
+gap: 10px;
+margin-top: 20px;
+}
+
+.status-form input {
+flex: 1;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 15px;
+box-sizing: border-box;
+}
+
+/* Helpdesk Information */
+
+.helpdesk-info {
+background-color: #fff8d9;
+border-left: 5px solid #FFD54F;
+padding: 25px 30px;
+margin-top: 20px;
+border-radius: 6px;
+}
+
+.helpdesk-info h3 {
+color: #0B4F8C;
+margin-top: 0;
+}
+
+.helpdesk-info ul {
+margin-bottom: 0;
+padding-left: 20px;
+}
+
+.helpdesk-info li {
+margin-bottom: 10px;
+line-height: 1.5;
+color: #444;
+}
+
+/* Active Helpdesk Navigation Link */
+
+.main-nav a.active {
+font-weight: bold;
+border-bottom: 3px solid #FFD54F;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+```
+.helpdesk-section {
+    padding: 35px 15px;
+}
+
+.helpdesk-container > h2 {
+    font-size: 27px;
+}
+
+.helpdesk-card {
+    padding: 22px;
+}
+
+.status-form {
+    flex-direction: column;
+}
+
+.status-form input,
+.status-form .helpdesk-button {
+    width: 100%;
+}
+```
+
+}
